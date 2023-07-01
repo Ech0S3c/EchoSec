@@ -8,9 +8,8 @@ import linkedinLogo from "@assets/logo_linkedin.svg";
 import instagramLogo from "@assets/logo_instagram.svg";
 import telegramLogo from "@assets/logo_telegram.svg";
 import githubLogo from "@assets/logo_github.svg";
-import { CardPhase } from '@/components/CardPhase';
-import { ArrowDown } from '@phosphor-icons/react';
 
+import { CardPhase } from '@/components/CardPhase';
 
 const urls = {
   linkedin: "https://www.linkedin.com/company/echosec00/",
@@ -18,6 +17,7 @@ const urls = {
   telegram: "https://t.me/+mq6iIth2D7pmYmQx",
   github: "https://github.com/EchoSec00"
 }
+
 
 export default function Home() {
   return (
@@ -41,11 +41,11 @@ export default function Home() {
           </div>
           <div className="flex justify-center items-center flex-col gap-2 mb-24">
             <p className="font-montserrat font-medium text-sm text-white">Saiba Mais</p>
-            <button className="w-6 h-9 border-white text-white border-2 rounded-2xl flex items-center justify-center"></button>
+            <button className="w-6 h-9 border-white text-white border-2 rounded-2xl flex items-center justify-center">Oi</button>
           </div>
         </div>
         <div className="flex justify-center items-center flex-col h-[80vh] pb-4">
-          <div className="flex justify-center items-center pb-16 pt-12">
+          <div className="flex justify-center items-center pb-16 pt-12 processo-seletivo">
             <h1 className="text-white text-5xl font-bold font-poppins">
               COMO VAI FUNCIONAR?
             </h1>
