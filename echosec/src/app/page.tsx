@@ -9,7 +9,6 @@ import instagramLogo from "@assets/logo_instagram.svg";
 import telegramLogo from "@assets/logo_telegram.svg";
 import githubLogo from "@assets/logo_github.svg";
 import { CardPhase } from '@/components/CardPhase';
-import { ArrowDown } from '@phosphor-icons/react';
 
 
 const urls = {
@@ -23,7 +22,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="pt-24 min-h-screen flex items-center justify-center flex-col">
-        <div className="flex flex-col w-full h-[80vh] justify-center items-center mt-[75px]">
+        <div className="flex flex-col w-full h-[80vh] justify-center items-center mt-[75px] mb-6">
           <div className="mt-10 w-52 h-20 mb-10 flex justify-center items-center">
             <h1 className="font-poppins font-bold text-white text-5xl">
               FALTAM
@@ -41,19 +40,43 @@ export default function Home() {
           </div>
           <div className="flex justify-center items-center flex-col gap-2 mb-24">
             <p className="font-montserrat font-medium text-sm text-white">Saiba Mais</p>
-            <button className="w-6 h-9 border-white text-white border-2 rounded-2xl flex items-center justify-center"></button>
+            <button className="w-6 h-9 border-white text-white border-2 rounded-2xl flex items-center justify-center cursor-default">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 1024 1024"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M862 465.3h-81c-4.6 0-9 2-12.1 5.5L550 723.1V160c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v563.1L255.1 470.8c-3-3.5-7.4-5.5-12.1-5.5h-81c-6.8 0-10.5 8.1-6 13.2L487.9 861a31.96 31.96 0 0 0 48.3 0L868 478.5c4.5-5.2.8-13.2-6-13.2z"></path>
+              </svg>
+            </button>
           </div>
         </div>
-        <div className="flex justify-center items-center flex-col h-[80vh] pb-4">
+        <div className="flex justify-center items-center flex-col h-[80vh] pb-4 mb-10">
           <div className="flex justify-center items-center pb-16 pt-12">
             <h1 className="text-white text-5xl font-bold font-poppins">
               COMO VAI FUNCIONAR?
             </h1>
           </div>
-          <div className="flex gap-12 ">
-            <CardPhase fase="Fase 1" title='Inscrição' description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, voluptatem unde et vel laborum autem voluptas non ducimus quis minus dolorem explicabo, ex beatae, distinctio dignissimos quisquam aperiam nesciunt culpa!"/>
-            <CardPhase fase="Fase 2" title='CTF' description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, voluptatem unde et vel laborum autem voluptas non ducimus quis minus dolorem explicabo, ex beatae, distinctio dignissimos quisquam aperiam nesciunt culpa!"/>
-            <CardPhase fase="Fase 3" title='Entrevista' description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, voluptatem unde et vel laborum autem voluptas non ducimus quis minus dolorem explicabo, ex beatae, distinctio dignissimos quisquam aperiam nesciunt culpa!"/>
+          <div className="flex gap-12 mb-10">
+            <CardPhase fase="Fase 1" title='Inscrição' description="Para fazer sua inscrição no nosso processo seletivo, você deve entrar no site ctf.echosec.com.br e se registrar com seu e-mail institucional do Inteli. Após a inscrição, você deve esperar até o dia do início da próxima fase. Não se esqueça de clicar em ‘Rules’ para ler as regras."/>
+            <CardPhase fase="Fase 2" title='CTF' description="Após o CTF, serão selecionados os participantes que se saíram melhor, e estes serão convidados para uma breve entrevista. Nela iremos conhecer o candidato e entender como foi o processo de encontrar as flags."/>
+            <CardPhase fase="Fase 3" title='Entrevista' description="Após o CTF, iremos selecionar os participantes que se saíram melhor e convidar para uma breve entrevista. Nela iremos conhecer o candidato e entender como foi o processo de encontrar as flags."/>
+          </div>
+        </div>
+        <div className="flex justify-center items-center flex-col h-[60vh] -mt-5 pb-4">
+          <div className="flex justify-center items-center pb-16 w-full">
+              <h1 className="text-white text-5xl font-bold font-poppins">
+                SOBRE NÓS
+              </h1>
+          </div>
+          <div className="flex justify-center items-center pb-16 pt-12 w-full">
+           <p className="mx-8 text-white font-poppins font-normal text-xl w-4/5">
+              EchoSec é o clube de cibersegurança do Inteli. Nós temos como maior objetivo democratizar o acesso ao conhecimento de segurança da informação na faculdade, além de participar em competições e eventos, e promover palestras e trilhas de aprendizado aos alunos da instituição.
+            </p>
           </div>
         </div>
       </div>

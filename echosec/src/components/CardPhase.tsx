@@ -10,7 +10,7 @@ interface CardPhaseProps {
 }
 
 export const CardPhase: React.FC<CardPhaseProps> = ({ fase, title, description }) => (
-  <div className="flex flex-col h-[416px] w-[353px] bg-cardPhase rounded-[10px]">
+  <div className="flex flex-col h-auto w-[353px] bg-cardPhase rounded-[10px]">
     <div className="mx-8 mb-14 mt-8">
       <h1 className="text-cardPhaseTitle font-medium text-2xl">
         {fase}
@@ -21,7 +21,7 @@ export const CardPhase: React.FC<CardPhaseProps> = ({ fase, title, description }
         {title}
       </h2>
     </div>
-    <div className="mx-8 text-white font-poppins font-normal text-base">
+    <div className="mx-8 mb-8 text-white font-poppins font-normal text-base">
       <p>
         {description}
       </p>
