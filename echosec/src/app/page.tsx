@@ -63,7 +63,7 @@ export default function Home() {
           </div>
           <div className="flex gap-12 mb-10">
             <CardPhase fase="Fase 1" title='Inscrição' description="Para fazer sua inscrição no nosso processo seletivo, você deve entrar no site ctf.echosec.com.br e se registrar com seu e-mail institucional do Inteli. Após a inscrição, você deve esperar até o dia do início da próxima fase. Não se esqueça de clicar em ‘Rules’ para ler as regras."/>
-            <CardPhase fase="Fase 2" title='CTF' description="Após o CTF, serão selecionados os participantes que se saíram melhor, e estes serão convidados para uma breve entrevista. Nela iremos conhecer o candidato e entender como foi o processo de encontrar as flags."/>
+            <CardPhase fase="Fase 2" title='CTF' description="Um CTF é um tipo de competição bem comum no mundo de cibersegurança, o objetivo é procurar e capturar “flags” escondidas, e elas podem ser encontradas ao explorar as falhas de uma aplicação web fictícia, por exemplo. Não se preocupe, serão abordados temas básicos e terão dicas de como encontrá-las."/>
             <CardPhase fase="Fase 3" title='Entrevista' description="Após o CTF, iremos selecionar os participantes que se saíram melhor e convidar para uma breve entrevista. Nela iremos conhecer o candidato e entender como foi o processo de encontrar as flags."/>
           </div>
         </div>
