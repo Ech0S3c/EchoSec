@@ -1,8 +1,22 @@
 import Layout from '@/components/Layout';
-import HoverCardAsync from '@/components/HoverCardAsync';
+
+import { HoverCards } from '@/components/HoverCards';
 import CountDownTimer from '@/components/CountDown/CountDownTimer';
+
+import echosecLogo from "@assets/logo_echosec_preto.svg";
+import linkedinLogo from "@assets/logo_linkedin.svg";
+import instagramLogo from "@assets/logo_instagram.svg";
+import telegramLogo from "@assets/logo_telegram.svg";
+import githubLogo from "@assets/logo_github.svg";
 import { CardPhase } from '@/components/CardPhase';
-import { AboutUs } from '@/components/AboutUs';
+
+
+const urls = {
+  linkedin: "https://www.linkedin.com/company/echosec00/",
+  instagram: "https://www.instagram.com/echo.sec/",
+  telegram: "https://t.me/+mq6iIth2D7pmYmQx",
+  github: "https://github.com/EchoSec00"
+}
 
 export default function Home() {
   return (
@@ -14,13 +28,12 @@ export default function Home() {
               FALTAM
             </h1>
           </div>
-          <div className="flex flex-row items-start justify-center w-full">
-            {/* <div className="mr-28 ml-40"> */}
-              <CountDownTimer />
-            {/* </div> */}
-            {/* <div className="flex justify-center flex-col gap-y-4 mt-3">
-              <HoverCardAsync />
-            </div> */}
+          <CountDownTimer />
+          <div className="flex justify-center flex-col gap-y-4">
+            {/* <HoverCards iconSocialMedia={linkedinLogo} iconLeague={echosecLogo} url={urls.linkedin}/>
+            <HoverCards iconSocialMedia={instagramLogo} iconLeague={echosecLogo} url={urls.instagram}/>
+            <HoverCards iconSocialMedia={telegramLogo} iconLeague={echosecLogo} url={urls.telegram}/>
+            <HoverCards iconSocialMedia={githubLogo} iconLeague={echosecLogo} url={urls.github}/> */}
           </div>
           <div className="flex justify-center font-poppins font-bold text-white text-4xl my-2 mt-5 mb-4">
             <h2>PARA O PROCESSO SELETIVO</h2>
@@ -54,13 +67,17 @@ export default function Home() {
             <CardPhase fase="Fase 3" title='Entrevista' description="Após o CTF, iremos selecionar os participantes que se saíram melhor e convidar para uma breve entrevista. Nela iremos conhecer o candidato e entender como foi o processo de encontrar as flags."/>
           </div>
         </div>
-        <div className="flex justify-center items-center flex-col h-[70vh] -mt-5 pb-4">
+        <div className="flex justify-center items-center flex-col h-[60vh] -mt-5 pb-4">
           <div className="flex justify-center items-center pb-16 w-full">
               <h1 className="text-white text-5xl font-bold font-poppins">
                 SOBRE NÓS
               </h1>
           </div>
-          <AboutUs />
+          <div className="flex justify-center items-center pb-16 pt-12 w-full">
+           <p className="mx-8 text-white font-poppins font-normal text-xl w-4/5">
+              EchoSec é o clube de cibersegurança do Inteli. Nós temos como maior objetivo democratizar o acesso ao conhecimento de segurança da informação na faculdade, além de participar em competições e eventos, e promover palestras e trilhas de aprendizado aos alunos da instituição.
+            </p>
+          </div>
         </div>
       </div>
     </Layout>

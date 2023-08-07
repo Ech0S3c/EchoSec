@@ -21,7 +21,7 @@ export const CardPhase: React.FC<CardPhaseProps> = ({ fase, title, description }
         {title}
       </h2>
     </div>
-    <div className="mx-8 mb-8 text-white font-poppins font-normal text-base text-left">
+    <div className="mx-8 mb-8 text-white font-poppins font-normal text-base">
       <p>
         {description}
       </p>
