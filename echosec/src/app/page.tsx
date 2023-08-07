@@ -9,6 +9,7 @@ import instagramLogo from "@assets/logo_instagram.svg";
 import telegramLogo from "@assets/logo_telegram.svg";
 import githubLogo from "@assets/logo_github.svg";
 import { CardPhase } from '@/components/CardPhase';
+import { AboutUs } from '@/components/AboutUs';
 
 
 const urls = {
@@ -67,17 +68,13 @@ export default function Home() {
             <CardPhase fase="Fase 3" title='Entrevista' description="Após o CTF, iremos selecionar os participantes que se saíram melhor e convidar para uma breve entrevista. Nela iremos conhecer o candidato e entender como foi o processo de encontrar as flags."/>
           </div>
         </div>
-        <div className="flex justify-center items-center flex-col h-[60vh] -mt-5 pb-4">
+        <div className="flex justify-center items-center flex-col h-[70vh] -mt-5 pb-4">
           <div className="flex justify-center items-center pb-16 w-full">
               <h1 className="text-white text-5xl font-bold font-poppins">
                 SOBRE NÓS
               </h1>
           </div>
-          <div className="flex justify-center items-center pb-16 pt-12 w-full">
-           <p className="mx-8 text-white font-poppins font-normal text-xl w-4/5">
-              EchoSec é o clube de cibersegurança do Inteli. Nós temos como maior objetivo democratizar o acesso ao conhecimento de segurança da informação na faculdade, além de participar em competições e eventos, e promover palestras e trilhas de aprendizado aos alunos da instituição.
-            </p>
-          </div>
+          <AboutUs />
         </div>
       </div>
     </Layout>
