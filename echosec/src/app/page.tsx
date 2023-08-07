@@ -9,6 +9,7 @@ import instagramLogo from "@assets/logo_instagram.svg";
 import telegramLogo from "@assets/logo_telegram.svg";
 import githubLogo from "@assets/logo_github.svg";
 import { CardPhase } from '@/components/CardPhase';
+import { AboutUs } from '@/components/AboutUs';
 
 
 const urls = {
@@ -73,11 +74,7 @@ export default function Home() {
                 SOBRE NÓS
               </h1>
           </div>
-          <div className="flex justify-center items-center pb-16 pt-12 w-full">
-           <p className="mx-8 text-white font-poppins font-normal text-xl w-4/5">
-              EchoSec é o clube de cibersegurança do Inteli. Nós temos como maior objetivo democratizar o acesso ao conhecimento de segurança da informação na faculdade, além de participar em competições e eventos, e promover palestras e trilhas de aprendizado aos alunos da instituição.
-            </p>
-          </div>
+          <AboutUs />
         </div>
       </div>
     </Layout>
