@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="pt-24 min-h-screen h-auto w-full flex items-center justify-center flex-col">
-        <div className="flex flex-col w-full h-[80vh] justify-center items-center mb-6 -mt-1 md:h-[87vh] max-md:mt-6 max-xl:mt-1 max-xl:h-[85vh] max-sm:h-[80vh]">
+        <div className="flex flex-col w-full justify-center items-center mb-6 -mt-1 max-md:mt-6 max-xl:mt-1 max-[760px]:mb-80">
           <div className="mt-10 w-52 h-20 mb-10 flex justify-center items-center max-sm:mt-4">
             <h1 className="font-poppins font-bold text-white text-5xl">
               FALTAM
@@ -57,7 +57,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="flex justify-center items-center flex-col h-[80vh] pb-4 mb-10 max-sm:h-max max-md:h-[100vh] max-xl:h-max">
+        <div className="flex justify-center items-center flex-col pb-4 mb-10 max-sm:h-max max-xl:h-max">
           <div className="flex justify-center items-center pb-16 pt-12">
             <h1 className="text-white text-5xl font-bold font-poppins text-center">
               COMO VAI FUNCIONAR?
@@ -69,7 +69,7 @@ export default function Home() {
             <CardPhase fase="Fase 3" title='Entrevista' description="Após o CTF, iremos selecionar os participantes que se saíram melhor e convidar para uma breve entrevista. Nela iremos conhecer o candidato e entender como foi o processo de encontrar as flags."/>
           </div>
         </div>
-        <div className="flex justify-center items-center flex-col h-[70vh] -mt-5 pb-4 md:h-[60vh] max-sm:[70vh] max-sm:mt-10">
+        <div className="flex justify-center items-center flex-col -mt-5 pb-4 max-sm:mt-10 max-[760px]:mt-72">
           <div className="flex justify-center items-center pb-16 w-full">
               <h1 className="text-white text-5xl font-bold font-poppins">
                 SOBRE NÓS
