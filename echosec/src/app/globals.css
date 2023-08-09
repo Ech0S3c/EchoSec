@@ -6,5 +6,12 @@
 @tailwind utilities;
 
 body {
-  background: #150C23
+  background: #150C23;
+  margin-left: 8px;
+}
+
+@media (min-width: 769px) {
+  .inscreva-se {
+     display: none;
+  }
 }

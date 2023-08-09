@@ -7,9 +7,9 @@ type LayoutProps = {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div>
+    <div className="w-full h-max" >
       <Navbar />
-      <main>{children}</main>
+      <main className="w-full">{children}</main>
       <Footer />
     </div>
   )
