@@ -61,7 +61,7 @@ export default function CountDownTimer() {
 
     if (daysTens === 0 && daysUnit === 0 ) {
       return (
-        <div className="flex gap-9 w-full justify-center">
+        <div className="flex gap-9 w-full justify-center max-xl:gap-0">
           <CountDownCard
             label="HORAS"
             number1={hourTens}
@@ -81,7 +81,7 @@ export default function CountDownTimer() {
       )
     } else {
       return (
-        <div className="flex gap-9 w-full justify-center">
+        <div className="flex gap-9 w-auto justify-center max-xl:gap-0">
           <CountDownCard 
             label="DIAS"
             number1={daysTens}

@@ -10,6 +10,7 @@ import telegramLogo from "@assets/logo_telegram.svg";
 import githubLogo from "@assets/logo_github.svg";
 import { CardPhase } from '@/components/CardPhase';
 import { AboutUs } from '@/components/AboutUs';
+import Link from 'next/link';
 
 
 const urls = {
@@ -22,9 +23,9 @@ const urls = {
 export default function Home() {
   return (
     <Layout>
-      <div className="pt-24 min-h-screen flex items-center justify-center flex-col">
-        <div className="flex flex-col w-full h-[80vh] justify-center items-center mt-[75px] mb-6">
-          <div className="mt-10 w-52 h-20 mb-10 flex justify-center items-center">
+      <div className="pt-24 min-h-screen h-auto w-full flex items-center justify-center flex-col">
+        <div className="flex flex-col w-full h-[80vh] justify-center items-center mb-6 -mt-1 md:h-[87vh] max-md:mt-6 max-xl:mt-1 max-xl:h-[85vh] max-sm:h-[80vh]">
+          <div className="mt-10 w-52 h-20 mb-10 flex justify-center items-center max-sm:mt-4">
             <h1 className="font-poppins font-bold text-white text-5xl">
               FALTAM
             </h1>
@@ -36,11 +37,11 @@ export default function Home() {
             <HoverCards iconSocialMedia={telegramLogo} iconLeague={echosecLogo} url={urls.telegram}/>
             <HoverCards iconSocialMedia={githubLogo} iconLeague={echosecLogo} url={urls.github}/> */}
           </div>
-          <div className="flex justify-center font-poppins font-bold text-white text-4xl my-2 mt-5 mb-4">
-            <h2>PARA O PROCESSO SELETIVO</h2>
+          <div className="flex justify-center font-poppins font-bold text-white text-4xl my-2 mt-5 mb-4 max-sm:mt-2 max-xl:mt-3">
+            <h2 className="text-center">PARA O PROCESSO SELETIVO</h2>
           </div>
-          <div className="flex justify-center items-center flex-col gap-2 mb-24">
-            <p className="font-montserrat font-medium text-sm text-white">Saiba Mais</p>
+          <div className="flex justify-center items-center flex-col gap-2 max-sm:mb-2 max-md:h-max">
+            <p className="font-montserrat font-medium text-sm text-white text-center">Saiba Mais</p>
             <button className="w-6 h-9 border-white text-white border-2 rounded-2xl flex items-center justify-center cursor-default">
               <svg
                 stroke="currentColor"
@@ -56,25 +57,34 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="flex justify-center items-center flex-col h-[80vh] pb-4 mb-10">
+        <div className="flex justify-center items-center flex-col h-[80vh] pb-4 mb-10 max-sm:h-max max-md:h-[100vh] max-xl:h-max">
           <div className="flex justify-center items-center pb-16 pt-12">
-            <h1 className="text-white text-5xl font-bold font-poppins">
+            <h1 className="text-white text-5xl font-bold font-poppins text-center">
               COMO VAI FUNCIONAR?
             </h1>
           </div>
-          <div className="flex gap-12 mb-10">
+          <div className="flex justify-center gap-12 mb-10 w-auto max-xl:flex-col max-sm:items-center">
             <CardPhase fase="Fase 1" title='Inscrição' description="Para fazer sua inscrição no nosso processo seletivo, você deve entrar no site ctf.echosec.com.br e se registrar com seu e-mail institucional do Inteli. Após a inscrição, você deve esperar até o dia do início da próxima fase. Não se esqueça de clicar em ‘Rules’ para ler as regras."/>
             <CardPhase fase="Fase 2" title='CTF' description="Um CTF é um tipo de competição bem comum no mundo de cibersegurança, o objetivo é procurar e capturar “flags” escondidas, e elas podem ser encontradas ao explorar as falhas de uma aplicação web fictícia, por exemplo. Não se preocupe, serão abordados temas básicos e terão dicas de como encontrá-las."/>
             <CardPhase fase="Fase 3" title='Entrevista' description="Após o CTF, iremos selecionar os participantes que se saíram melhor e convidar para uma breve entrevista. Nela iremos conhecer o candidato e entender como foi o processo de encontrar as flags."/>
           </div>
         </div>
-        <div className="flex justify-center items-center flex-col h-[70vh] -mt-5 pb-4">
+        <div className="flex justify-center items-center flex-col h-[70vh] -mt-5 pb-4 md:h-[60vh] max-sm:[70vh] max-sm:mt-10">
           <div className="flex justify-center items-center pb-16 w-full">
               <h1 className="text-white text-5xl font-bold font-poppins">
                 SOBRE NÓS
               </h1>
           </div>
           <AboutUs />
+        </div>
+        <div>
+        <div className="gap-16 flex items-center inscreva-se max-sm:mt-24">
+          <Link href="http://ctf.echosec.com.br/" target="_blank" className="block lg:inline-block lg:mt-0">
+            <button className="w-40 h-14 font-montserrat font-medium text-lg text-gray-300 border-gray-300 border-2 rounded-2xl flex items-center justify-center hover:border-white hover:text-white max-sm:mb-10">
+              Inscreva-se
+            </button>
+          </Link>
+        </div>
         </div>
       </div>
     </Layout>
