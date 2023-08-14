@@ -1,18 +1,20 @@
 "use client"
 const ScrollButton = () => {
-  let scrollDistance = 10050;
+  let scrollDistance;
   
   const handleScrollDown = () => {
-    if (window.innerWidth < 760 && window.innerWidth > 640) {
-      scrollDistance = 500;
-      console.log(scrollDistance)
-    } else if (window.innerWidth < 1024 && window.innerWidth > 760) {
+    if (window.innerWidth < 1024 && window.innerWidth > 760) {
       scrollDistance = 550;
-      console.log(scrollDistance)
+    } else if (window.innerWidth < 1280 && window.innerWidth > 1024) {
+      scrollDistance = 700;
+    } else if (window.innerWidth < 640 && window.innerWidth > 320) {
+      scrollDistance = 780;
+    } else if (window.innerWidth < 320) {
+      scrollDistance = 400;
     } else {
-      scrollDistance = 800;
-      console.log(scrollDistance)
+      scrollDistance = 620;
     }
+    
     window.scrollTo({
       top: scrollDistance,
       behavior: "smooth",
