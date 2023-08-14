@@ -16,7 +16,7 @@ export default function CountDownTimer() {
     const [secondUnits, setSecondUnits] = useState<number>(0);
 
     useEffect(() => {
-      let targetDate = dayjs("2023-08-14T18:00:00-03:00", "YYYY-MM-DDTHH:MM:SSZ");
+      let targetDate = dayjs("2023-08-21T18:00:00-03:00", "YYYY-MM-DDTHH:MM:SSZ");
       
       const countDown = setInterval(() => {
         const currentTime = dayjs();
