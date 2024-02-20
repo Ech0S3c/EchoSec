@@ -16,7 +16,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col font-bold justify-center items-center mb-32 text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left translate-y-12">
-          <h1 className="text-2xl font-anonymous font-bold text-center lg:text-5xl">
+          <h1 className="text-2xl font-anonymous font-bold text-center text-white lg:text-5xl">
             we are not the obvious 
           </h1>
           {/* <p className="text-2xl font-anonymous font-medium text-center lg:text-4xl pb-20 translate-y-24">
