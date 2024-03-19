@@ -23,7 +23,7 @@ const CountDownTimer: React.FC<{ targetDate: Date }> = ({ targetDate }) => {
     const hours = Math.floor(time / 3600); // Calcula as horas
     const minutes = Math.floor((time % 3600) / 60); // Calcula os minutos
     const seconds = time % 60; // Calcula os segundos
-    return `${hours}:${minutes}:${seconds}`;
+    return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
   }
 
   return (
