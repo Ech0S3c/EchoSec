@@ -1,7 +1,10 @@
 import Image from "next/image";
 import CountDownTimer from "../components/CountDownTimer";
+import { DateTime } from "luxon";
 
 export default function Home() {
+  const targetDateUTC = DateTime.fromISO("2024-03-22T13:00:00", { zone: "America/Sao_Paulo" }).toJSDate();
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
       <div className="-translate-y-9">
@@ -20,10 +23,7 @@ export default function Home() {
           <h1 className="text-2xl font-anonymous font-bold text-center text-white lg:text-5xl">
             we are not the obvious 
           </h1>
-          {/* <p className="text-2xl font-anonymous font-medium text-center lg:text-4xl pb-20 translate-y-24">
-            7:34:06
-          </p> */}
-          <CountDownTimer targetDate={new Date("2024-03-22T13:00:00")} />
+          <CountDownTimer targetDate={targetDateUTC} />
         </div>
       </div>
     </main>

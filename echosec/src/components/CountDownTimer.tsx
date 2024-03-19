@@ -14,7 +14,6 @@ const CountDownTimer: React.FC<{ targetDate: Date }> = ({ targetDate }) => {
     const timer = setInterval(() => {
       const newTimeRemaining = calculateTimeRemaining();
       setTimeRemaining(newTimeRemaining);
-      console.log('timeRemaining', newTimeRemaining); // Verifica o estado atualizado
     }, 1000);
   
     return () => clearInterval(timer);
@@ -28,9 +27,11 @@ const CountDownTimer: React.FC<{ targetDate: Date }> = ({ targetDate }) => {
   }
 
   return (
-    <p className="text-2xl font-anonymous font-medium text-center lg:text-4xl pb-20 translate-y-24">
-      {formatTime(timeRemaining)}
-    </p>
+    <>
+      <p className="text-2xl font-anonymous font-medium text-center lg:text-4xl pb-20 translate-y-24">
+        {formatTime(timeRemaining)}
+      </p>
+    </>
   );
 }
 
