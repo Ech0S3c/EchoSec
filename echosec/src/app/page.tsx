@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CountDownTimer from "../components/CountDownTimer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           {/* <p className="text-2xl font-anonymous font-medium text-center lg:text-4xl pb-20 translate-y-24">
             7:34:06
           </p> */}
+          <CountDownTimer targetDate={new Date("2024-03-22T13:00:00")} />
         </div>
       </div>
     </main>
