@@ -71,12 +71,13 @@ export default function Home() {
               <CardComponent
                 title="fase 2"
                 description="CTF"
-                text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quam itaque labore doloremque nisi omnis fugiat amet obcaecati aliquam odit? Enim animi nobis tempora vero ex impedit! Quibusdam, nam ipsam."
+                text="Um CTF é um tipo de competição bem comum no mundo de cibersegurança, o objetivo é procurar e capturar “flags” escondidas, e elas podem ser encontradas ao explorar as falhas de uma aplicação web fictícia, por exemplo. Não se preocupe, serão abordados temas básicos e terão dicas de como encontrá-las."
               />
               <CardComponent
                 title="fase 3"
                 description="Entrevista"
-                text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quam itaque labore doloremque nisi omnis fugiat amet obcaecati aliquam odit? Enim animi nobis tempora vero ex impedit! Quibusdam, nam ipsam."
+                text="
+                Após o CTF, iremos selecionar os participantes que se saíram melhor e convidar para uma breve entrevista. Nela iremos conhecer o candidato e entender como foi o processo de encontrar as flags."
               />
             </div>
           </div>
